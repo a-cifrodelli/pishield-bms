@@ -1,0 +1,53 @@
+# ==============================================================================
+# Python & Environment
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+integration/venv/
+
+# Environment variables & secrets (keep .env.example tracked)
+.env
+integration/.env
+!.env.example
+!integration/.env.example
+
+# Log files
+*.log
+device.log
+integration/installation/device.log
+
+# ==============================================================================
+# Arduino & Embedded Build Artifacts
+# ==============================================================================
+*.hex
+*.elf
+*.bin
+*.o
+*.a
+build/
+.arduino/
+
+# ==============================================================================
+# OS & IDE Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

@@ -1,0 +1,15 @@
+[Unit]
+Description=PiShield BMS Serial Listener & Graceful Shutdown Daemon
+After=multi-user.target
+
+[Service]
+ExecStart=/opt/pishield_bms/launcher.sh ack
+WorkingDirectory=/opt/pishield_bms
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+User=root
+
+[Install]
+WantedBy=multi-user.target
